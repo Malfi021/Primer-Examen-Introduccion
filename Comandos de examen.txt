@@ -1,0 +1,232 @@
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion
+$ mkdir "Continentes"
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion
+$ cd Continentes/
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mkdir Europa/Continentes
+mkdir: cannot create directory ‘Europa/Continentes’: No such file or directory
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mkdir "Europa" "Asia" "America" "Australia" "Afrika"
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mkdir "Brasil"../America
+mkdir: cannot create directory ‘Brasil../America’: No such file or directory
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mkdir "Brasil"/America
+mkdir: cannot create directory ‘Brasil/America’: No such file or directory
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ cd America/
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ mkdir "Brasil"
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ mkdir ../"Italia"/Europa
+mkdir: cannot create directory ‘../Italia/Europa’: No such file or directory
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ mkdir ../Europa/"Italia"
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ mkdir ../Asia/"Japon.txt"
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ ../
+bash: ../: Is a directory
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/America
+$ cd ../
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ ls -Ra
+.:
+./  ../  Afrika/  America/  Asia/  Australia/  Europa/
+
+./Afrika:
+./  ../
+
+./America:
+./  ../  Brasil/
+
+./America/Brasil:
+./  ../
+
+./Asia:
+./  ../  Japon.txt/
+
+./Asia/Japon.txt:
+./  ../
+
+./Australia:
+./  ../
+
+./Europa:
+./  ../  Italia/
+
+./Europa/Italia:
+./  ../
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ rm -m Australia
+rm: unknown option -- m
+Try 'rm --help' for more information.
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ rm -r Australia
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mv Afrika/Africa
+mv: missing destination file operand after 'Afrika/Africa'
+Try 'mv --help' for more information.
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ nano Afrika/Africa
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ mv Afrika Africa
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes
+$ git init
+Initialized empty Git repository in C:/Users/Nahuel/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes/.git/
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git remote add https://github.com/Malfi021/Primer-Examen-Introduccion.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git remote add origin https://github.com/Malfi021/Primer-Examen-Introduccion.git
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git add .
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ ls -R
+.:
+Africa/  America/  Asia/  Europa/
+
+./Africa:
+
+./America:
+Brasil/
+
+./America/Brasil:
+
+./Asia:
+Japon.txt/
+
+./Asia/Japon.txt:
+
+./Europa:
+Italia/
+
+./Europa/Italia:
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git commit -m "Subiendo archivos de examen"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Malfi021/Primer-Examen-Introduccion.git'
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Malfi021/Primer-Examen-Introduccion.git'
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ ls -R
+.:
+Africa/  America/  Asia/  Europa/
+
+./Africa:
+
+./America:
+Brasil/
+
+./America/Brasil:
+
+./Asia:
+Japon.txt/
+
+./Asia/Japon.txt:
+
+./Europa:
+Italia/
+
+./Europa/Italia:
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git add .
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git commit -m "Subiendo carpatas al examen"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$ git push origin https://github.com/Malfi021/Primer-Examen-Introduccion.git
+fatal: invalid refspec 'https://github.com/Malfi021/Primer-Examen-Introduccion.git'
+
+Nahuel@DESKTOP-0KU9EDV MINGW64 ~/Desktop/CLARA/DIGITAL HOUSE/Primer Examen Introduccion/Continentes (main)
+$
